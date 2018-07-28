@@ -11,7 +11,52 @@
 </head>
 
 <body>
-
+    <div>
+        <!-- Title-->
+        <h1 id="title">Survey Form</h1>
+        <!-- Description-->
+        <p id="description">Simple survey form.</p>
+    </div>
+    <div>
+        <!-- Form elements -->
+        <form id="survey-form">
+            <div>
+                <label id="name-label">Name: </label>
+                <input type="text" id="name" placeholder="Enter Name" require>
+            </div>
+            <div>
+                <label id="email-label">Email: </label>
+                <input type="email" id="email" placeholer="Enter Email Address" required>
+            </div>
+            <div>
+                <label id="age-label">Age: </label>
+                <input type="number" id="number" placeholder="Enter Age" required min="1" max="110">
+            </div>
+            <div>
+                <label>Gender</label>
+                <select name="gender" id="dropdown">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label><input type="radio" name="beginner">Beginner</label>
+                <label><input type="radio" name="intermediate">Intermediate</label>
+                <label><input type="radio" name="expert">Expert</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="teacher-student" value="teacher"/>I am a Teacher</label>
+                <label><input type="checkbox" name="teacher-student" value="student"/>I am a Student</label>
+            </div>
+            <div>
+                <textarea></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
