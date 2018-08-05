@@ -1,0 +1,103 @@
+body {
+    background-color: #b4d2e7;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    min-width: 320;
+}
+
+#description {
+    font-size: 16px;
+    padding: 5px;
+}
+
+#form-outer {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    width: 65%;
+    border: 2px solid #a1a6b4;
+    border-radius: 10px;
+}
+
+#submit {
+    background-color: #88d9e6;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+}
+
+.labels {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 10px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.rightTab {
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: midle;
+}
+
+.input-field {
+    height: 20px;
+    width: 250px;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #a1a6b4;
+}
+
+.dropdown {
+    height: 20px;
+    width: 100px;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #a1a6b4;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+.radio, .checkbox {
+    position: relative;
+    left: -40px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}

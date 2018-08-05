@@ -15,48 +15,88 @@
         <!-- Title-->
         <h1 id="title">Survey Form</h1>
         <!-- Description-->
-        <p id="description">Simple survey form.</p>
+        <p id="description">Tell us about your experience.</p>
     </div>
-    <div>
+    <div id="form-outer">
         <!-- Form elements -->
         <form id="survey-form">
-            <div>
-                <label id="name-label">Name: </label>
-                <input type="text" id="name" placeholder="Enter Name" require>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label">Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" id="name" placeholder="Enter Name" class="input-field" require>
+                </div>
             </div>
-            <div>
-                <label id="email-label">Email: </label>
-                <input type="email" id="email" placeholer="Enter Email Address" required>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label">Email: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" id="email" placeholder="Enter Email Address" class="input-field" required>
+                </div>
             </div>
-            <div>
-                <label id="age-label">Age: </label>
-                <input type="number" id="number" placeholder="Enter Age" required min="1" max="110">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="age-label">Age: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" id="number" placeholder="Enter Age" class="input-field" required min="1" max="110">
+                </div>
             </div>
-            <div>
-                <label>Gender</label>
-                <select name="gender" id="dropdown">
-                    <option value="female">Female</option>
-                    <option value="male">Male</option>
-                    <option value="other">Other</option>
-                </select>
+            <div class="rowTab">
+                <div class="labels">
+                    <label>Gender:</label>
+                </div>
+                <div class="rightTab">
+                    <select name="gender" id="dropdown" class="dropdown">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
             </div>
-            <div>
-                <label><input type="radio" name="beginner">Beginner</label>
-                <label><input type="radio" name="intermediate">Intermediate</label>
-                <label><input type="radio" name="expert">Expert</label>
+            <div class="rowTab">
+                <div class="labels">
+                    <label>How likely are you going to recommend us to your friends? </label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings">Most Likely</label></li>
+                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings">Likely</label></li>
+                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings">Maybe</label></li>
+                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings">Never</label></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <label><input type="checkbox" name="teacher-student" value="teacher"/>I am a Teacher</label>
-                <label><input type="checkbox" name="teacher-student" value="student"/>I am a Student</label>
+            <div class="rowTab">
+                <div class="labels">
+                    <label>What were you favourite parts about the course?</label>
+                </div>
+                <div class="rightTab">
+                    <ul id="favourites" style="list-style: none;">
+                        <li class="checkbox"><label><input type="checkbox" name="fav" class="userRatings" value="1"/>Lessons</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="fav" class="userRatings" value="2"/>Challenges</label></li>
+                        <li class="checkbox"><label><input type="checkbox" name="fav" class="userRatings" value="3"/>Videos</label></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <textarea></textarea>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="suggestions">Do you have any tips for us?</label>
+                </div>
+                <div class=rightTab>
+                    <textarea class="input-field" style="height:50px"></textarea>
+                </div>
             </div>
-            <div>
+            <div class="rowTab">
                 <button type="submit" id="submit">Submit</button>
             </div>
         </form>
     </div>
+    <footer>
+        <p>This page was coded and designed by Mohammed Jowardhar.</p>
+    </footer>
 </body>
 
 </html>
