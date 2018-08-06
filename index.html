@@ -11,6 +11,8 @@
 </head>
 
 <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
     <div>
         <!-- Title-->
         <h1 id="title">Survey Form</h1>
@@ -25,7 +27,7 @@
                     <label id="name-label">Name: </label>
                 </div>
                 <div class="rightTab">
-                    <input type="text" id="name" placeholder="Enter Name" class="input-field" require>
+                    <input type="text" id="name" placeholder="Enter Name" class="input-field" required>
                 </div>
             </div>
             <div class="rowTab">
@@ -38,7 +40,7 @@
             </div>
             <div class="rowTab">
                 <div class="labels">
-                    <label id="age-label">Age: </label>
+                    <label id="number-label">Age: </label>
                 </div>
                 <div class="rightTab">
                     <input type="number" id="number" placeholder="Enter Age" class="input-field" required min="1" max="110">
@@ -62,10 +64,10 @@
                 </div>
                 <div class="rightTab">
                     <ul style="list-style: none;">
-                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings">Most Likely</label></li>
-                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings">Likely</label></li>
-                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings">Maybe</label></li>
-                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings">Never</label></li>
+                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings" value="1">Most Likely</label></li>
+                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings" value="2">Likely</label></li>
+                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings" value="3">Maybe</label></li>
+                        <li class="radio"><label><input type="radio" name="radio-buttons" class="userRatings" value="4">Never</label></li>
                     </ul>
                 </div>
             </div>
